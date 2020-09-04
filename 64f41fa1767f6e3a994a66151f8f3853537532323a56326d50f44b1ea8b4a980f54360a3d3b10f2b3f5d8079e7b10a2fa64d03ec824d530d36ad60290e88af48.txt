@@ -1,0 +1,69 @@
+Algoritmo "dois_um"
+
+
+Var
+   a, c, p:  REAL
+
+
+Inicio
+
+  Escreval ("A-Andre joga:")
+  leia (a)
+  se (a <> 1) e (a <> 2) então
+        repita
+           Escreval ("jogada invalida temte novamente:")
+           leia (a)
+           ate_que (a= 1) ou (a= 2)
+  fim_se
+
+        limpatela ()
+
+  Escreval ("C-Carlos joga:")
+  leia (c)
+  se (c <> 1) e (c <> 2) então
+        repita
+           Escreval ("jogada invalida temte novamente:")
+           leia (c)
+           ate_que (c = 1) ou (c = 2)
+  fim_se
+
+        limpatela ()
+
+ Escreval ("P-Pietro joga:")
+ leia (p)
+ se (p <> 1) e (p <> 2) então
+       repita
+          Escreval ("jogada invalida temte novamente:")
+          leia (p)
+          ate_que (p = 1) ou (p = 2)
+ fim_se
+
+        limpatela ()
+
+      se (a = c) e (c = p) então
+            Escreval("X")
+
+      senão
+
+         se (a <> c) e (a <> p) então
+               Escreval("A")
+
+      senão
+
+          se (c <> a) e (c <> p) então
+                Escreval ("C")
+
+       senão
+
+            se (p <> a) e (p <> c) então
+                  Escreval("P")
+
+            fim_se
+
+           fim_se
+
+         fim_se
+
+       fim_se
+
+fim.
